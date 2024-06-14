@@ -192,12 +192,12 @@ export function TestimonialSection() {
                             />
                         </button>
                         <DotsWrapper>
-                            <DotElm active={activeSlide === 1}></DotElm>
-                            <DotElm active={activeSlide === 2}></DotElm>
-                            <DotElm active={activeSlide === 3}></DotElm>
-                            <DotElm active={activeSlide === 4}></DotElm>
-                            <DotElm active={activeSlide === 5}></DotElm>
-                            <DotElm active={activeSlide === 6}></DotElm>
+                            <DotElm $active={activeSlide === 1}></DotElm>
+                            <DotElm $active={activeSlide === 2}></DotElm>
+                            <DotElm $active={activeSlide === 3}></DotElm>
+                            <DotElm $active={activeSlide === 4}></DotElm>
+                            <DotElm $active={activeSlide === 5}></DotElm>
+                            <DotElm $active={activeSlide === 6}></DotElm>
                         </DotsWrapper>
                         <button
                             onClick={() => testimonialSwiper?.current?.swiper?.slideNext()}

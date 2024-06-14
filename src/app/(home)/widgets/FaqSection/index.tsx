@@ -47,10 +47,10 @@ export function FaqSection() {
 function Accordion({title="", summary=""}) {
     const [active, setActive] = useState(false);
     return <AccordionItem>
-        <AccordionItem_header active={active} onClick={()=>setActive(!active)}>
+        <AccordionItem_header $active={active} onClick={()=>setActive(!active)}>
             <p>{title}</p>
         </AccordionItem_header>
-        <AccordionItem_content active={active}>
+        <AccordionItem_content $active={active}>
             <p>{summary}</p>
         </AccordionItem_content>
     </AccordionItem>

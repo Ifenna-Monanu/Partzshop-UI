@@ -72,7 +72,7 @@ export const AccordionItem = styled.div`
   border-radius: 0.5rem;
 `;
 
-export const AccordionItem_header = styled.div<{active: boolean}>`
+export const AccordionItem_header = styled.div<{$active: boolean}>`
   display: flex;
   align-items: start;
   justify-content: space-between;
@@ -81,7 +81,7 @@ export const AccordionItem_header = styled.div<{active: boolean}>`
   font-size: 16px;
   cursor: pointer;
   &::after {
-    content: "${props=>props.active ? "-" : "+" }";
+    content: "${props=>props.$active ? "-" : "+" }";
     display: inline-flex;
     align-items: center;
     font-size: 32px;
@@ -92,8 +92,8 @@ export const AccordionItem_header = styled.div<{active: boolean}>`
 
 `;
 
-export const AccordionItem_content = styled.div<{active: boolean}>`
+export const AccordionItem_content = styled.div<{$active: boolean}>`
 font-size: 18px;
 font-weight: 500;
-display: ${props=>props.active ? "block" : "none"};
+display: ${props=>props.$active ? "block" : "none"};
 `;

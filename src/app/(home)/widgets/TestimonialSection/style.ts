@@ -149,10 +149,10 @@ display: flex;
 gap: 1rem;
 `;
 
-export const DotElm = styled.span<{active: boolean}>`
+export const DotElm = styled.span<{$active: boolean}>`
 display: inline-block;
 width: .5rem;
 height: .5rem;
-background: ${(props)=>props.active ? "#25282B" : "#E8E8E8"};
+background: ${(props)=>props.$active ? "#25282B" : "#E8E8E8"};
 border-radius: 30rem;
 `

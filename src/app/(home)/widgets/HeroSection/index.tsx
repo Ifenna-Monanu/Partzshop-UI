@@ -45,31 +45,31 @@ export function HeroSection(){
           className="HeroSection-slides"
         >
           <SwiperSlide className="slideItem">
-            <Image src={SlideImage01} alt="Slide-1" />
+            <Image src={SlideImage01} alt="Slide-1" priority />
           </SwiperSlide>
           <SwiperSlide className="slideItem">
-            <Image src={SlideImage02} alt="Slide-1" />
+            <Image src={SlideImage02} alt="Slide-2" priority />
           </SwiperSlide>
           <SwiperSlide className="slideItem">
-            <Image src={SlideImage03} alt="Slide-1" />
+            <Image src={SlideImage03} alt="Slide-3" priority />
           </SwiperSlide>
           <SwiperSlide className="slideItem">
-            <Image src={SlideImage01} alt="Slide-1" />
+            <Image src={SlideImage01} alt="Slide-1" priority />
           </SwiperSlide>
           <SwiperSlide className="slideItem">
-            <Image src={SlideImage02} alt="Slide-1" />
+            <Image src={SlideImage02} alt="Slide-2" priority />
           </SwiperSlide>
           <SwiperSlide className="slideItem">
-            <Image src={SlideImage03} alt="Slide-1" />
+            <Image src={SlideImage03} alt="Slide-3" priority />
           </SwiperSlide>
           <SwiperSlide className="slideItem">
-            <Image src={SlideImage01} alt="Slide-1" />
+            <Image src={SlideImage01} alt="Slide-1" priority />
           </SwiperSlide>
           <SwiperSlide className="slideItem">
-            <Image src={SlideImage02} alt="Slide-1" />
+            <Image src={SlideImage02} alt="Slide-2" priority />
           </SwiperSlide>
           <SwiperSlide className="slideItem">
-            <Image src={SlideImage03} alt="Slide-1" />
+            <Image src={SlideImage03} alt="Slide-3" priority />
           </SwiperSlide>
         </Swiper>
       </HeroSectionSlide>
