@@ -47,6 +47,7 @@ export const TestimonialSectionHeading = styled.div`
 
 export const TestimonialSectionContent = styled.div`
   display: grid;
+  gap: 1.5rem;
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -54,7 +55,7 @@ export const TestimonialSectionContent = styled.div`
     width: 100%;
     height: 100%;
   }
-  .slide-wrapper{
+  .slide-wrapper {
     align-items: stretch;
   }
   .slideItem {
@@ -120,3 +121,38 @@ export const TestimonialSlides_profileDetails = styled.div`
     font-weight: 300;
   }
 `;
+
+export const SlideFooter = styled.div`
+  place-self: end;
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    /* padding: 20px; */
+    background: #e2e2e24d;
+    border: none;
+    border-radius: 50rem;
+    cursor: pointer;
+    &:disabled{
+      opacity: .5;
+    }
+  }
+`;
+
+export const DotsWrapper = styled.div`
+display: flex;
+gap: 1rem;
+`;
+
+export const DotElm = styled.span<{active: boolean}>`
+display: inline-block;
+width: .5rem;
+height: .5rem;
+background: ${(props)=>props.active ? "#25282B" : "#E8E8E8"};
+border-radius: 30rem;
+`
