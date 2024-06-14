@@ -1,7 +1,6 @@
-'use client'
+"use client";
 import "./globals.css";
 import Provider from "@/theme/provider";
-
 
 // export const metadata: Metadata = {
 //   title: "Create Next App",
@@ -16,12 +15,8 @@ export default function RootLayout({
   return (
     <html>
       <body>
-      <Provider>
-      {children}
-    </Provider>
-
-
+        <Provider>{children}</Provider>
       </body>
     </html>
-     );
+  );
 }
