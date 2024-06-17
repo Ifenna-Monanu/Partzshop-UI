@@ -5,14 +5,14 @@ import { AboutSection, BlogSection, FaqSection, HeroSection, HowItWorksSection, 
 
 export default function Home() {
   return <ContainerWrapper>
-    <HeroSection></HeroSection>
-    <AboutSection></AboutSection>
-    <ServiceSection></ServiceSection>
-    <WhyChooseSection></WhyChooseSection>
-    <ProductsSection></ProductsSection>
-    <HowItWorksSection></HowItWorksSection>
-    <TestimonialSection></TestimonialSection>
-    <FaqSection></FaqSection>
-    <BlogSection></BlogSection>
+    <HeroSection />
+    <AboutSection />
+    <ServiceSection />
+    <WhyChooseSection />
+    <ProductsSection />
+    <HowItWorksSection />
+    <TestimonialSection />
+    <FaqSection />
+    <BlogSection />
   </ContainerWrapper>;
 }
