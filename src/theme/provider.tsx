@@ -1,20 +1,20 @@
-import { Footer , NavBar } from '@/app/layouts'
-import React from 'react'
-import { ThemeProvider } from 'styled-components'
-import { theme } from '.'
+import { Footer, NavBar } from "@/app/layouts";
+import React from "react";
+import { ThemeProvider } from "styled-components";
+import { theme } from ".";
 
 interface IProp {
-    children: React.ReactNode
+  children: React.ReactNode;
 }
 
-function Provider({children}: IProp) {
+function Provider({ children }: IProp) {
   return (
     <ThemeProvider theme={theme}>
-        <NavBar />
-        {children}
-        <Footer />
+      <NavBar />
+      {children}
+      <Footer />
     </ThemeProvider>
-  )
+  );
 }
 
-export default Provider
+export default Provider;
