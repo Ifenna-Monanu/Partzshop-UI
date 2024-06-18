@@ -12,7 +12,7 @@ export function HowItWorksSection(){
             <TextContentWrapper>
                 <TextContentHeading>
                     <span>How it works</span>
-                    <h1>It's easy to shop on Partzshop</h1>
+                    <h1>It is easy to shop on Partzshop</h1>
                     <p>Start shopping for quality car parts by simply following these 4 easy steps.</p>
                 </TextContentHeading>
                 <StepLists>

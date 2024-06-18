@@ -35,7 +35,7 @@ export function TestimonialSection() {
                 <TestimonialSectionHeading>
                     <span>Tesimonials</span>
                     <h1>What our customers have to say</h1>
-                    <p>Don't just take our word for it.</p>
+                    <p>Don&apos;t just take our word for it.</p>
                 </TestimonialSectionHeading>
 
                 <TestimonialSectionContent>
