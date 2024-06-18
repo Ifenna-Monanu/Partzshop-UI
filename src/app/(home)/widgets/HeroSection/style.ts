@@ -49,6 +49,7 @@ export const HeroSectionText = styled.div`
         background-color: #0043E6;
         padding: 1rem 1.5rem;
         border: none;
+        cursor: pointer;
         border-radius: 20rem;
     }
     @media (max-width: 450px){
