@@ -30,7 +30,7 @@ export default function BlogsPage() {
         <BlogsPageContent>
           <h2>Recent Blogs</h2>
           <BlogsWrapper>
-            <BlogItem>
+            <BlogItem href="/blogs/authentic-car-parts">
               <BlogItem_imageContainer>
                 <Image src={BlogImage1} alt="Blog Image" />
               </BlogItem_imageContainer>

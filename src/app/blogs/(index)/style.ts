@@ -64,12 +64,13 @@ export const BlogsWrapper = styled.div`
   }
 `;
 
-export const BlogItem = styled.div`
+export const BlogItem = styled.a`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: start;
   gap: 1rem;
   height: 17rem;
+  text-decoration: none;
   overflow: hidden;
   &:first-child {
     grid-row: span 2 / span 2;

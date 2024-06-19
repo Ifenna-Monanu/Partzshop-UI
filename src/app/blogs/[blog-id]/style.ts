@@ -110,7 +110,7 @@ grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 gap: 1.5rem;
 `;
 
-export const BlogItem = styled.div`
+export const BlogItem = styled.a`
   display: grid;
   align-items: start;
   gap: 1rem;
