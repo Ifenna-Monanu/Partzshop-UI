@@ -21,7 +21,4 @@ export {
     PlaceOrderIcon,
     SlideLeftIcon,
     SlideRightIcon,
-    LinkedInIcon,
-    InstagramIcon,
-    XIcon,
 }
