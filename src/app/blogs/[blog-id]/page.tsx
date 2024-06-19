@@ -58,7 +58,7 @@ export default function BlogPage() {
               Using authentic car parts is crucial for ensuring safety,
               performance, and longevity when maintaining your vehicle. However,
               the market is flooded with counterfeit parts that can jeopardize
-              your vehicle's integrity and pose serious risks. So, how can you
+              your vehicle&apos;s integrity and pose serious risks. So, how can you
               distinguish between genuine and fake car parts? We are here to
               share practical tips for identifying authentic car parts and
               avoiding counterfeit products.
@@ -67,7 +67,7 @@ export default function BlogPage() {
             <h2>Importance of Authentic Car Parts</h2>
 
             <p>
-              Before dishing out tips, let's understand why using authentic car
+              Before dishing out tips, let&apos;s understand why using authentic car
               parts is paramount. Genuine parts are engineered to meet stringent
               quality standards set by manufacturers, ensuring compatibility,
               reliability, and optimal performance. On the other hand,
@@ -145,7 +145,7 @@ export default function BlogPage() {
               At Partzshop, we are committed to providing our customers with
               genuine, high-quality car parts sourced from reputable
               manufacturers. With us, you can shop with confidence, knowing that
-              your vehicle's integrity and performance are our top priorities.
+              your vehicle&apos;s integrity and performance are our top priorities.
             </p>
             <p>Stay informed, stay vigilant, and drive safely!</p>
           </Blog_TextContainer>

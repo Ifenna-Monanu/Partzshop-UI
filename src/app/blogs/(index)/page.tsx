@@ -24,7 +24,7 @@ export default function BlogsPage() {
         <BlogsPageHeading>
           <span>Our Blog</span>
           <h1>Articles, Stories and Posts</h1>
-          <p>Don't just take our word for it.</p>
+          <p>Don&apos;t just take our word for it.</p>
         </BlogsPageHeading>
 
         <BlogsPageContent>
