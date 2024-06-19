@@ -32,7 +32,7 @@ export function FaqSection() {
             <FaqSectionHeading>
                 <span>FAQ</span>
                 <h1>You have questions, <br />we have answers. </h1>
-                <p>Not seeing the answers you&apos;re looking for here?</p>
+                <p>Not seeing the answers you're looking for here?</p>
                 <a>Contact us</a>
             </FaqSectionHeading>
             <FaqSectionContent>
