@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Century Gothic";
+  src: url("./century-gothic-bolder.TTF");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url("./century-gothic-italic-bold.TTF");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("./century-gothic-bold.TTF");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("./century-gothic-italic.TTF");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("./century-gothic.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
