@@ -102,6 +102,11 @@ padding: 1rem;
 margin: auto;
 max-width: 1240px;
 width: 100%;
+h2 {
+font-size: 24px;
+font-weight: 700;
+color: #101828;
+}
 `;
 
 export const OtherBlogsWrapper = styled.div`

@@ -105,7 +105,7 @@ export const CarBrands = styled.div`
     visibility: visible;
     margin: auto;
   }
-  @media (max-width: 1140px) {
+  @media (max-width: 540px) {
     visibility: visible;
     animation: ${linearLoop} 20s linear infinite;
   }
@@ -113,8 +113,9 @@ export const CarBrands = styled.div`
 
 export const CarBrand = styled.div`
   display: inline-flex;
-  width: 5rem;
+  width: 2.5rem;
   height: auto;
+  overflow: hidden;
   img {
     width: 100%;
     height: 100%;
