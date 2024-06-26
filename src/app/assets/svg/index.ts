@@ -10,15 +10,19 @@ import SlideRightIcon from "./slide-right.svg";
 import LinkedInIcon from "./linkedIn-icon.svg";
 import InstagramIcon from "./instagram-icon.svg";
 import XIcon from "./x-icon.svg";
+import CloseIcon from "./close-icon.svg";
+import MenuIcon from "./menu-icon.svg";
 
 export {
     ArrowLeftIcon,
     ChatOnWhatsappIcon,
     ChevronRightIcon,
+    CloseIcon,
     DiagonalArrowIcon,
     MakePaymentIcon,
     OrderDeliveredIcon,
     PlaceOrderIcon,
+    MenuIcon,
     SlideLeftIcon,
     SlideRightIcon,
     LinkedInIcon,
