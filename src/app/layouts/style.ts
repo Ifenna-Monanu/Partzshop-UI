@@ -114,6 +114,7 @@ export const LinksContainer = styled.div`
 export const LinksWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 
   .link-wrap {
     display: grid;
@@ -143,6 +144,10 @@ export const LinksWrapper = styled.div`
         }
       }
     }
+  }
+
+  @media (max-width: 540px){
+  grid-template-columns: auto;
   }
 `;
 
