@@ -10,8 +10,10 @@ import SlideRightIcon from "./slide-right.svg";
 import LinkedInIcon from "./linkedIn-icon.svg";
 import InstagramIcon from "./instagram-icon.svg";
 import XIcon from "./x-icon.svg";
+import WhatsappIcon from "./whatsapp-icon.svg";
 import CloseIcon from "./close-icon.svg";
 import MenuIcon from "./menu-icon.svg";
+import ModalCloseIcon from "./modal-close-icon.svg";
 
 export {
     ArrowLeftIcon,
@@ -28,4 +30,6 @@ export {
     LinkedInIcon,
     InstagramIcon,
     XIcon,
+    WhatsappIcon,
+    ModalCloseIcon,
 }

@@ -98,7 +98,7 @@ gap: 1rem;
 export const OtherBlogsContainer = styled.div`
 display: grid;
 gap: 1rem;
-padding: 1rem;
+padding: 1rem 1rem 4rem;
 margin: auto;
 max-width: 1240px;
 width: 100%;
