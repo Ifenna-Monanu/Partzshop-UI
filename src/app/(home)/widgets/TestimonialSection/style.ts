@@ -20,6 +20,7 @@ export const TestimonialSectionHeading = styled.div`
   display: grid;
   gap: 0.5rem;
   place-items: center;
+  text-align: center;
   max-width: 35rem;
   margin: auto;
   span {
