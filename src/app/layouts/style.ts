@@ -161,6 +161,7 @@ export const NewsLetterContainer = styled.div`
     padding: 0.25rem;
     width: auto;
     height: fit-content;
+    background: #ffffff;
     border: 1px solid #e4e4e7;
     border-radius: 2rem;
     input {
