@@ -32,13 +32,12 @@ export const VanguardWrapper = styled.div`
 
 export const HeroSectionText = styled.div`
   height: 100%;
-  max-height: 23rem;
   width: 100%;
   max-width: 26rem;
   display: grid;
   place-content: start;
   gap: 1rem;
-  padding: 3rem 1rem;
+  padding: 3rem 1rem 5rem;
   background: rgba(255, 255, 255, 0.8);
   h1 {
     font-size: 32px;
@@ -66,6 +65,9 @@ export const HeroSectionText = styled.div`
     border: none;
     cursor: pointer;
     border-radius: 20rem;
+  }
+  @media (max-width: 550px) {
+    padding: 2rem 1rem;
   }
 `;
 
