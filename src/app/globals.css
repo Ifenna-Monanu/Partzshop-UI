@@ -1,6 +1,9 @@
+@import url("./assets/fonts/Century-Gothic/century-gothic.css");
+
 *,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Century Gothic";
 }

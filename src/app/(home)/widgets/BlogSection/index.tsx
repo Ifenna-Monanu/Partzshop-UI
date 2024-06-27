@@ -13,11 +13,11 @@ export function BlogSection(){
         <BlogSectionWrapper>
             <BlogSectionHeading>
                 <h1>Our Blog</h1>
-                <span>View all <Image src={ChevronRightIcon} alt="view all"/> </span>
+                <a href="/blogs">View all <Image src={ChevronRightIcon} alt="view all"/> </a>
             </BlogSectionHeading>
 
             <BlogSectionContent>
-                <BlogCard>
+                <BlogCard href="/blogs/authentic-car-parts">
                     <BlogCard_imageContainer>
                         <Image src={BlogImage1} alt="Blog" />
                     </BlogCard_imageContainer>

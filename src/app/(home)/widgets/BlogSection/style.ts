@@ -25,11 +25,12 @@ h1{
     font-weight: 700;
     color: #101828;
 }
-span {
+a {
     display: inline-flex;
     align-items: center;
     gap: .5rem;
     color: #0043E6;
+    text-decoration: none;
 }
 `;
 
@@ -42,10 +43,11 @@ export const BlogSectionContent = styled.div`
 
 `;
 
-export const BlogCard = styled.div`
+export const BlogCard = styled.a`
     display: grid;
     gap: 1rem;
     place-content: start;
+    text-decoration: none;
 `;
 
 export const BlogCard_imageContainer = styled.div`

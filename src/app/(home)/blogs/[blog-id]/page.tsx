@@ -160,6 +160,7 @@ export default function BlogPage() {
       </BlogPageWrapper>
 
       <OtherBlogsContainer>
+        <h2>Other Articles</h2>
         <OtherBlogsWrapper>
           <BlogItem>
             <BlogItem_imageContainer>
