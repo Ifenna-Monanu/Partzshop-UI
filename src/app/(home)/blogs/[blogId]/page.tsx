@@ -73,11 +73,11 @@ export default function BlogPage() {
 
         <BlogPageContent>
           <Blog_Heading>
-            <Blog_DateTime>
+            {(activeBlog.date) && <Blog_DateTime>
               <span>{activeBlog?.minutes} mins read</span>
               <span>•</span>
               <span>{setBlogDate(activeBlog?.date)}</span>
-            </Blog_DateTime>
+            </Blog_DateTime>}
             <h1>{activeBlog?.title}</h1>
           </Blog_Heading>
 
