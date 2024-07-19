@@ -111,6 +111,52 @@ export const LinksContainer = styled.div`
   }
 `;
 
+export const ModalBody = styled.div`
+  display: grid;
+  gap: 1.5rem;
+  place-items: center;
+  line-height: 1.4;
+  text-align: center;
+  h2 {
+    color: #1b495d;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  p {
+    display: block;
+    padding: 0 1rem;
+    color: #52575c;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    font-weight: 600;
+    color: #ffffff;
+    background: #0043e6;
+    border: 1px solid #0043e6;
+    border-radius: 50rem;
+    cursor: pointer;
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+  button.primary-btn {
+    color: #ffffff;
+    background: #0043e6;
+    border: 1px solid #0043e6;
+  }
+  button.secondary-btn {
+    color: #0043e6;
+    background: #ffffff;
+    border: 1px solid #0043e6;
+  }
+`;
+
 export const LinksWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);

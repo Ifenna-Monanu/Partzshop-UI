@@ -13,7 +13,6 @@ import {
   HeroSectionSlide,
   HeroSectionText,
   HeroSectionWrapper,
-  ModalBody,
   SlideFooter,
   VanguardWrapper,
 } from "./style";
@@ -26,6 +25,8 @@ import SlideImage02 from "@/app/assets/images/vanguard-image-2.png";
 import SlideImage03 from "@/app/assets/images/vanguard-image-3.png";
 import { SlideLeftIcon, SlideRightIcon, WhatsappIcon } from "@/app/assets/svg";
 import Modal from "@/app/ui/modal";
+import Button from "@/app/ui/button";
+import WhatsappConfig from "@/util/whatsapp.config";
 
 export function HeroSection() {
   const heroSwipper = useRef<SwiperRef>(null);
@@ -44,7 +45,7 @@ export function HeroSection() {
                 Partzshop offers you access to buy original top-quality car
                 parts for your vehicle at mind-blowing prices.
               </p>
-              <button onClick={() => setWhatsappModal(true)}>Order now</button>
+              <Button onClick={() => setWhatsappModal(true)}>Order now</Button>
             </HeroSectionText>
           </VanguardWrapper>
           <HeroSectionSlide>
@@ -111,17 +112,33 @@ export function HeroSection() {
       </HeroSectionContainer>
 
       {/* Whatsapp Modal */}
-      <Modal maxWidth={350} show={whatsappModal} onClose={() => setWhatsappModal(false)}>
-        <ModalBody>
+      <Modal
+        maxWidth={400}
+        show={whatsappModal}
+        onClose={() => setWhatsappModal(false)}
+      >
+        <Modal.Body>
           <Image src={WhatsappIcon} alt="Whatsapp Icon" width={54} />
           <h2>
             Our sales reps are available 24/7 on WhatsApp to take your order and
             all your car needs.
           </h2>
           <p>Feel free to ask for tips and tricks to keep your car running!</p>
-          <button className="primary-btn">Proceed to Shop</button>
-          <button className="secondary-btn" onClick={() => setWhatsappModal(false)}>Go Back</button>
-        </ModalBody>
+          <Button
+            btnType="primary"
+            variant="full"
+            onClick={() => window.open(WhatsappConfig.link, "_blank")}
+          >
+            Proceed to Shop
+          </Button>
+          <Button
+            btnType="secondary"
+            variant="full"
+            onClick={() => setWhatsappModal(false)}
+          >
+            Go Back
+          </Button>
+        </Modal.Body>
       </Modal>
     </>
   );

@@ -1,18 +1,20 @@
+import WhatsappConfig from "./whatsapp.config";
+
 export const navLinks = [
   {
     id: "1",
     name: "About",
-    link: "#",
+    link: "/#about",
   },
   {
     id: "2",
     name: "Our Products",
-    link: "#",
+    link: WhatsappConfig.link,
   },
   {
     id: "3",
     name: "Blog",
-    link: "#",
+    link: "/blogs/",
   },
   {
     id: "4",

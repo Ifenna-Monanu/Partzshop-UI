@@ -18,6 +18,7 @@ import {
   FiltersImage,
   SuspensionPartsImage,
 } from "@/app/assets/images/products/";
+import WhatsappConfig from "@/util/whatsapp.config";
 
 export function ProductsSection() {
   return (
@@ -68,7 +69,7 @@ export function ProductsSection() {
             </ProductCard>
           </ProductCardWrapper>
 
-          <StoreButton href="#">Visit Store</StoreButton>
+          <StoreButton href={WhatsappConfig.link}>Visit Store</StoreButton>
         </ProductSectionContent>
       </ProductSectionWrapper>
     </ProductSectionContainer>
