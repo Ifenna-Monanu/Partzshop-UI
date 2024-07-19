@@ -37,7 +37,7 @@ export default function Modal({
 interface ModalBodyProps {
   children?: React.ReactNode;
 }
-Modal.Body =  ({children}: ModalBodyProps)=>{
+Modal.Body =  function modalBody ({children}: ModalBodyProps){
   return (
     <ModalBody>
       <>{children}</>
