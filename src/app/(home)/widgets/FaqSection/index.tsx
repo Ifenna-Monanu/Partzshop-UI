@@ -33,7 +33,7 @@ export function FaqSection() {
                 <span>FAQ</span>
                 <h1>You have questions, <br />we have answers. </h1>
                 <p>Not seeing the answers you are looking for here?</p>
-                <a>Contact us</a>
+                <a href="/contact/">Contact us</a>
             </FaqSectionHeading>
             <FaqSectionContent>
                 {faq_list.map((faqItem, index)=>(
