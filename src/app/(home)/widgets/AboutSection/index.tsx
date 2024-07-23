@@ -28,7 +28,7 @@ import {
 
 export function AboutSection() {
   return (
-    <AboutSectionContainer>
+    <AboutSectionContainer id="about">
       <AboutSectionWrapper>
         <TextContentWrapper>
           <span>About us</span>

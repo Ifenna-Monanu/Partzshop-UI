@@ -45,9 +45,30 @@ export const CloseModalIcon = styled.div`
   padding: 0.5rem;
   background: #fb4e4e20;
   border-radius: 0.5rem;
+  cursor: pointer;
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+`;
+
+export const ModalBody = styled.div`
+  display: grid;
+  gap: 1.5rem;
+  place-items: center;
+  line-height: 1.4;
+  text-align: center;
+  h2 {
+    color: #1b495d;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  p {
+    display: block;
+    padding: 0 1rem;
+    color: #52575c;
+    font-size: 16px;
+    font-weight: 400;
   }
 `;

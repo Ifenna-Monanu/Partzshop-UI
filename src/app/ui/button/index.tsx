@@ -1,35 +1,53 @@
-import React, { ButtonHTMLAttributes, FC } from 'react'
-import styled from 'styled-components'
+import React, { ButtonHTMLAttributes, FC } from "react";
+import styled from "styled-components";
 
-type IVaariant = 'full' | 'small' | 'medium'
+type IVaariant = "full" | "small" | "medium";
+type IBtnType = "primary" | "secondary" | "link" | "neutral";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: IVaariant | undefined
+  variant?: IVaariant | undefined;
+  btnType?: IBtnType | "primary";
 }
 
-
-const Button: FC<ButtonProps> = ({children, variant}) => {
+const Button: FC<ButtonProps> = ({ children, variant, btnType, ...props }) => {
   return (
-    <ButtonUI varaint={variant}>
-        {children}
+    <ButtonUI className={btnType} $varaint={variant} {...props}>
+      {children}
     </ButtonUI>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
 
+const ButtonUI = styled.button<{
+  $varaint: IVaariant | undefined;
+}>`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  width: ${({ $varaint }) => ($varaint === "full" ? "100%" : "auto")};
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  background: #0043e6;
+  border: 1px solid #0043e6;
+  border-radius: 50rem;
+  cursor: pointer;
 
-
-const ButtonUI = styled.button<{varaint: IVaariant | undefined}>`
-    place-self: start;
-    display: inline-block;
+  &:disabled {
+    opacity: 0.5;
+  }
+  &.primary {
     color: #ffffff;
-    font-weight: 500;
-    width: ${({varaint}) => varaint === 'full' ? '100%' : 'auto' };
-    font-size: 14px;
-    cursor: pointer;
-    background-color: #0043E6;
-    padding: 1rem 1.5rem;
-    border: none;
-    border-radius: 20rem;
-`
+    background: #0043e6;
+    border: 1px solid #0043e6;
+  }
+  &.secondary {
+    color: #0043e6;
+    background: #ffffff;
+    border: 1px solid #0043e6;
+  }
+  &.link{
+  }
+`;

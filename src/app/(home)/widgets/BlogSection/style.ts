@@ -45,7 +45,7 @@ export const BlogSectionContent = styled.div`
 
 export const BlogCard = styled.a`
     display: grid;
-    gap: 1rem;
+    gap: 1.5rem;
     place-content: start;
     text-decoration: none;
 `;
@@ -69,7 +69,7 @@ export const BlogCard_textContainer = styled.div`
         display: flex;
         align-items: start;
         gap: 1rem;
-        font-size: 24px;
+        font-size: 21px;
         font-weight: 700;
         color: #101828;
     }

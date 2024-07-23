@@ -69,19 +69,21 @@ export const BlogItem = styled.a`
   grid-template-columns: repeat(2, 1fr);
   align-items: start;
   gap: 1rem;
-  height: 17rem;
+  height: 100%;
+  max-height: 10rem;
   text-decoration: none;
   overflow: hidden;
   &:first-child {
     grid-row: span 2 / span 2;
     grid-template-columns: auto;
-    height: 100%;
+    max-height: 21rem;
   }
   @media (max-width: 950px) {
     grid-template-columns: auto;
-    height: auto;
+    max-height: none;
     &:first-child{
       height: auto;
+      max-height: none;
       grid-row: auto;
     }
   }
@@ -104,22 +106,22 @@ export const BlogItem_imageContainer = styled.div`
 
 export const BlogItem_textContainer = styled.div`
   display: grid;
-  gap: 0.5rem;
+  gap: .5rem;
   h2 {
     display: flex;
     align-items: start;
     gap: 1rem;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
     color: #101828;
   }
   p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: #667085;
   }
   span {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     color: #0043e6;
   }

@@ -1,6 +1,7 @@
-import { ReactElement } from "react";
+import React, { ReactElement } from "react";
 import {
   CloseModalIcon,
+  ModalBody,
   ModalContainer,
   ModalOverlay,
   ModalWrapper,
@@ -12,7 +13,7 @@ interface ModalProps {
   show: boolean;
   onClose(): void;
   maxWidth?: number;
-  children?: ReactElement;
+  children?: React.ReactNode;
 }
 export default function Modal({
   maxWidth,
@@ -27,8 +28,19 @@ export default function Modal({
         <CloseModalIcon onClick={onClose}>
           <Image src={ModalCloseIcon} alt="Close Modal Button" />
         </CloseModalIcon>
-        {children}
+        <>{children}</>
       </ModalWrapper>
     </ModalContainer>
   );
+}
+
+interface ModalBodyProps {
+  children?: React.ReactNode;
+}
+Modal.Body =  function modalBody ({children}: ModalBodyProps){
+  return (
+    <ModalBody>
+      <>{children}</>
+    </ModalBody>
+  )
 }
