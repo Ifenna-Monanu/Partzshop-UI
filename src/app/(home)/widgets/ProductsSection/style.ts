@@ -35,7 +35,7 @@ export const ProductSectionHeading = styled.div`
   h1 {
     font-size: 32px;
     font-weight: 700;
-		text-transform: capitalize;
+    text-transform: capitalize;
   }
 `;
 
@@ -67,7 +67,7 @@ export const ProductCard = styled.div`
     font-size: 20px;
     font-weight: 700;
     color: #f5f5f5;
-		text-transform: capitalize;
+    text-transform: capitalize;
     text-align: center;
     pointer-events: none;
   }
@@ -103,11 +103,11 @@ export const StoreButton = styled.a`
   color: #0043e6;
   font-weight: 500;
   font-size: 14px;
-	text-decoration: none;
-	background: #ffffff;
-  padding: .7rem 1.5rem;
-	margin: auto;
-	border: 1px solid #0043e6;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 0.7rem 1.5rem;
+  margin: auto;
+  border: 1px solid #0043e6;
   border-radius: 20rem;
-	cursor: pointer;
+  cursor: pointer;
 `;

@@ -10,7 +10,12 @@ import {
   WhyChooseSectionWrapper,
 } from "./style";
 
-import { AffordabilityImage, AuthenticImage, QualityImage, ReliabilityImage } from "@/app/assets/images/why-choose";
+import {
+  AffordabilityImage,
+  AuthenticImage,
+  QualityImage,
+  ReliabilityImage,
+} from "@/app/assets/images/why-choose";
 
 export function WhyChooseSection() {
   return (

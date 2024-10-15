@@ -6,10 +6,10 @@ import AutoCareImage from "@/app/assets/images/products/auto-care.jpg";
 import FiltersImage from "@/app/assets/images/products/filters.jpg";
 
 export {
-    AutoCareImage,
-    BrakePartsImage,
-    EngineOilImage,
-    EnginePartsImage,
-    FiltersImage,
-    SuspensionPartsImage,
+  AutoCareImage,
+  BrakePartsImage,
+  EngineOilImage,
+  EnginePartsImage,
+  FiltersImage,
+  SuspensionPartsImage,
 };

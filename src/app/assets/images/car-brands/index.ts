@@ -10,17 +10,16 @@ import NissanImage from "@/app/assets/images/car-brands/nissan.png";
 import TeslaImage from "@/app/assets/images/car-brands/tesla.png";
 import VolkswagenImage from "@/app/assets/images/car-brands/volkswagen.png";
 
-
 export {
-    AudiImage,
-    BMWImage,
-    ChevroletImage,
-    FordImage,
-    HondaImage,
-    JeepImage,
-    LexusImage,
-    MercedesImage,
-    NissanImage,
-    TeslaImage,
-    VolkswagenImage,
+  AudiImage,
+  BMWImage,
+  ChevroletImage,
+  FordImage,
+  HondaImage,
+  JeepImage,
+  LexusImage,
+  MercedesImage,
+  NissanImage,
+  TeslaImage,
+  VolkswagenImage,
 };

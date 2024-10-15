@@ -1,27 +1,25 @@
-import React, { FC, TextareaHTMLAttributes } from 'react'
-import styled from 'styled-components'
+import React, { FC, TextareaHTMLAttributes } from "react";
+import styled from "styled-components";
 
-
-interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElement>{
-    label: string;
-    err?: string;
+interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
+  label: string;
+  err?: string;
 }
 
-const TextArea:FC<TextAreaProps> = ({label, err, ...props}) => {
+const TextArea: FC<TextAreaProps> = ({ label, err, ...props }) => {
   return (
     <TextAreaUI>
-        <label htmlFor={label}>{label}</label>
-        <textarea id={label} {...props}></textarea>
-        <span>{err}</span>
+      <label htmlFor={label}>{label}</label>
+      <textarea id={label} {...props}></textarea>
+      <span>{err}</span>
     </TextAreaUI>
-  )
-}
+  );
+};
 
-export default TextArea
-
+export default TextArea;
 
 const TextAreaUI = styled.div`
-display: flex;
+  display: flex;
   margin-bottom: 5px;
   flex-direction: column;
 
@@ -41,7 +39,7 @@ display: flex;
     height: 121px;
     width: 100%;
     margin-top: 3px;
-    border: 1px solid #D0D5DD;
+    border: 1px solid #d0d5dd;
     padding: 12px 16px;
     border-radius: 8px;
 
@@ -49,4 +47,4 @@ display: flex;
       outline: none;
     }
   }
-`
+`;

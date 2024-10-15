@@ -81,7 +81,7 @@ export const BlogItem = styled.a`
   @media (max-width: 950px) {
     grid-template-columns: auto;
     max-height: none;
-    &:first-child{
+    &:first-child {
       height: auto;
       max-height: none;
       grid-row: auto;
@@ -99,14 +99,14 @@ export const BlogItem_imageContainer = styled.div`
     height: 100%;
     object-fit: cover;
   }
-  @media (max-width: 950px){
+  @media (max-width: 950px) {
     height: 15rem;
   }
 `;
 
 export const BlogItem_textContainer = styled.div`
   display: grid;
-  gap: .5rem;
+  gap: 0.5rem;
   h2 {
     display: flex;
     align-items: start;

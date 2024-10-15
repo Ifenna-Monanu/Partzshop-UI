@@ -44,14 +44,14 @@ export const ServiceSectionContent = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
-  `;
-  
-  export const ServiceCard = styled.div`
+`;
+
+export const ServiceCard = styled.div`
   position: relative;
   height: 18rem;
   border-radius: 1rem;
   overflow: hidden;
-  p{
+  p {
     position: absolute;
     bottom: 0;
     width: 100%;

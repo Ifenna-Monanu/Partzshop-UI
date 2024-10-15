@@ -77,8 +77,8 @@ export const Blog_TextContainer = styled.div`
   p {
     font-size: 16px;
     font-weight: 400;
-    &:last-child{
-    margin-top: 1rem;
+    &:last-child {
+      margin-top: 1rem;
     }
   }
   h2 {
@@ -94,7 +94,7 @@ export const Blog_TextContainer = styled.div`
     list-style-position: inside;
     li {
       margin-bottom: 0.5rem;
-      &:last-child{
+      &:last-child {
         margin-bottom: 0;
       }
       &::marker {

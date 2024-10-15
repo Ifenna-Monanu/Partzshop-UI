@@ -19,8 +19,8 @@ import { GetAllBlogs } from "@/app/assets/data/blog";
 export default function BlogsPage() {
   const blogList = GetAllBlogs();
 
-  function setBlogDate(date: string): string{
-    return moment(date).format("D MMM YYYY")
+  function setBlogDate(date: string): string {
+    return moment(date).format("D MMM YYYY");
   }
 
   return (
@@ -38,7 +38,12 @@ export default function BlogsPage() {
             {blogList.map((blog, index) => (
               <BlogItem href={`/blogs/${blog.id}`} key={index} target="_blank">
                 <BlogItem_imageContainer>
-                  <Image src={`/blogs/${blog.image}`} alt={blog.title} width={500} height={500} />
+                  <Image
+                    src={`/blogs/${blog.image}`}
+                    alt={blog.title}
+                    width={500}
+                    height={500}
+                  />
                 </BlogItem_imageContainer>
                 <BlogItem_textContainer>
                   <span>

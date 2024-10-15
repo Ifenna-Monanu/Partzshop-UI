@@ -15,7 +15,7 @@ import DiagonalArrowIcon from "@/app/assets/svg/diagonal-arrow.svg";
 import { GetAllBlogs } from "@/app/assets/data/blog";
 
 export function BlogSection() {
-    const blogList = GetAllBlogs();
+  const blogList = GetAllBlogs();
 
   function setBlogDate(date: string): string {
     return moment(date).format("D MMM YYYY");
@@ -31,26 +31,33 @@ export function BlogSection() {
         </BlogSectionHeading>
 
         <BlogSectionContent>
-            {blogList.map((blog, index)=>(
+          {blogList.map((blog, index) => (
             <BlogCard href={`/blogs/${blog.id}`} key={index} target="_blank">
-                <BlogCard_imageContainer>
-                <Image src={`/blogs/${blog.image}`} alt={blog.title} width={500} height={500} />
-                </BlogCard_imageContainer>
-                <BlogCard_textContainer>
-                <span>{blog.minutes} minutes read - {setBlogDate(blog.date)}</span>
+              <BlogCard_imageContainer>
+                <Image
+                  src={`/blogs/${blog.image}`}
+                  alt={blog.title}
+                  width={500}
+                  height={500}
+                />
+              </BlogCard_imageContainer>
+              <BlogCard_textContainer>
+                <span>
+                  {blog.minutes} minutes read - {setBlogDate(blog.date)}
+                </span>
                 <h2>
-                    {blog.title}{" "}
-                    <Image
+                  {blog.title}{" "}
+                  <Image
                     src={DiagonalArrowIcon}
                     alt="Blog link"
                     width={16}
                     height={30}
-                    />
+                  />
                 </h2>
                 <p>{blog.overview}</p>
-                </BlogCard_textContainer>
+              </BlogCard_textContainer>
             </BlogCard>
-            ))}
+          ))}
         </BlogSectionContent>
       </BlogSectionWrapper>
     </BlogSectionContainer>

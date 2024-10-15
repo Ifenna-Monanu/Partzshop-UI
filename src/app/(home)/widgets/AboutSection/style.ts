@@ -101,7 +101,7 @@ export const CarBrands = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  &:first-child{
+  &:first-child {
     visibility: visible;
     margin: auto;
   }

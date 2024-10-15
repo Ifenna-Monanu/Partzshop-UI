@@ -192,8 +192,8 @@ export const LinksWrapper = styled.div`
     }
   }
 
-  @media (max-width: 540px){
-  grid-template-columns: auto;
+  @media (max-width: 540px) {
+    grid-template-columns: auto;
   }
 `;
 

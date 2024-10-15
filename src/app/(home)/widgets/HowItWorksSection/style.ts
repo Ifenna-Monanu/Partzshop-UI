@@ -70,7 +70,7 @@ export const StepItem = styled.div`
     font-weight: 500;
     color: #232323;
   }
-  img{
+  img {
     width: 2.5rem;
     height: 2.5rem;
   }

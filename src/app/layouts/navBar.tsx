@@ -22,7 +22,11 @@ export const NavBar = () => {
         <NavContainerLinks $open={navState}>
           {navLinks.map((link) => {
             return (
-              <NavLink key={link.id} href={link.link} onClick={()=>setNavState(false)}>
+              <NavLink
+                key={link.id}
+                href={link.link}
+                onClick={() => setNavState(false)}
+              >
                 {link.name}
               </NavLink>
             );

@@ -48,6 +48,6 @@ const ButtonUI = styled.button<{
     background: #ffffff;
     border: 1px solid #0043e6;
   }
-  &.link{
+  &.link {
   }
 `;
