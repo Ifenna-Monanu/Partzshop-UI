@@ -1,6 +1,6 @@
 const WhatsappConfig = {
-    link: "https://wa.me/+14798024855",
-    phone: "+14798024855",
-}
+  link: "https://wa.me/+2349110007771",
+  phone: "+2349110007771",
+};
 
 export default WhatsappConfig;

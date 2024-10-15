@@ -139,21 +139,21 @@ export const SlideFooter = styled.div`
     border: none;
     border-radius: 50rem;
     cursor: pointer;
-    &:disabled{
-      opacity: .5;
+    &:disabled {
+      opacity: 0.5;
     }
   }
 `;
 
 export const DotsWrapper = styled.div`
-display: flex;
-gap: 1rem;
+  display: flex;
+  gap: 1rem;
 `;
 
-export const DotElm = styled.span<{$active: boolean}>`
-display: inline-block;
-width: .5rem;
-height: .5rem;
-background: ${(props)=>props.$active ? "#25282B" : "#E8E8E8"};
-border-radius: 30rem;
-`
+export const DotElm = styled.span<{ $active: boolean }>`
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: ${(props) => (props.$active ? "#25282B" : "#E8E8E8")};
+  border-radius: 30rem;
+`;

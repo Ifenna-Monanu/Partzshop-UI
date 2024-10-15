@@ -6,10 +6,10 @@
 }
 
 @font-face {
-    font-family: "Century Gothic";
-    src: url("./century-gothic-italic-bold.TTF");
-    font-weight: bold;
-    font-style: italic;
+  font-family: "Century Gothic";
+  src: url("./century-gothic-italic-bold.TTF");
+  font-weight: bold;
+  font-style: italic;
 }
 
 @font-face {

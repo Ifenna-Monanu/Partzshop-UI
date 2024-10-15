@@ -45,8 +45,8 @@ export default function BlogPage() {
 
   const blogList = GetAllBlogs();
 
-  function setBlogDate(date:string):string{
-    return moment(date).format("MMMM D, YYYY")
+  function setBlogDate(date: string): string {
+    return moment(date).format("MMMM D, YYYY");
   }
 
   useEffect(() => {
@@ -73,11 +73,13 @@ export default function BlogPage() {
 
         <BlogPageContent>
           <Blog_Heading>
-            {(activeBlog.date) && <Blog_DateTime>
-              <span>{activeBlog?.minutes} mins read</span>
-              <span>•</span>
-              <span>{setBlogDate(activeBlog?.date)}</span>
-            </Blog_DateTime>}
+            {activeBlog.date && (
+              <Blog_DateTime>
+                <span>{activeBlog?.minutes} mins read</span>
+                <span>•</span>
+                <span>{setBlogDate(activeBlog?.date)}</span>
+              </Blog_DateTime>
+            )}
             <h1>{activeBlog?.title}</h1>
           </Blog_Heading>
 
@@ -136,7 +138,7 @@ export default function BlogPage() {
                     <p>{blog.overview}</p>
                   </BlogItem_textContainer>
                 </BlogItem>
-              )
+              ),
           )}
         </OtherBlogsWrapper>
       </OtherBlogsContainer>

@@ -1,5 +1,11 @@
 import React from "react";
-import { FooterContainer, FooterWrapper, LinksContainer, LinksWrapper, NewsLetterContainer } from "./style";
+import {
+  FooterContainer,
+  FooterWrapper,
+  LinksContainer,
+  LinksWrapper,
+  NewsLetterContainer,
+} from "./style";
 import { Logo } from "@/app/assets";
 import Link from "next/link";
 import Button from "@/app/ui/button";
