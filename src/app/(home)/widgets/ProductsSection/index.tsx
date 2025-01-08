@@ -26,7 +26,7 @@ import Button from "@/app/ui/button";
 export function ProductsSection() {
   const [whatsappModal, setWhatsappModal] = useState(false);
   return (
-    <ProductSectionContainer data-aos="fade-right">
+    <ProductSectionContainer data-aos="fade-right" id="products">
       <ProductSectionWrapper>
         <ProductSectionHeading>
           <span>Our Products</span>
