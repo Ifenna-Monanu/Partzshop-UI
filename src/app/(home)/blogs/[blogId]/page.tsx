@@ -65,7 +65,7 @@ export default function BlogPage() {
     <BlogPageContainer>
       <BlogPageWrapper>
         <BlogPageHeading>
-          <BackButton onClick={()=>window.close()}>
+          <BackButton onClick={() => window.close()}>
             <Image src={ArrowLeftIcon} alt="Back Icon" />
             <span>Back</span>
           </BackButton>

@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import AOS from "aos";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 import { ContainerWrapper } from "./style";
 import {
   AboutSection,
@@ -17,10 +17,10 @@ import {
 } from "./widgets/index";
 
 export default function Home() {
-  useEffect(()=>{
+  useEffect(() => {
     AOS.init();
     AOS.refresh();
-  })
+  });
   return (
     <ContainerWrapper>
       <HeroSection />

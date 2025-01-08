@@ -111,7 +111,10 @@ export function HeroSection() {
       </HeroSectionContainer>
 
       {/* Whatsapp Modal */}
-      <WhatsappModal openState={whatsappModal} closeAction={()=>setWhatsappModal(false)} />
+      <WhatsappModal
+        openState={whatsappModal}
+        closeAction={() => setWhatsappModal(false)}
+      />
     </>
   );
 }
