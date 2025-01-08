@@ -30,7 +30,7 @@ export function AboutSection() {
   return (
     <AboutSectionContainer id="about">
       <AboutSectionWrapper>
-        <TextContentWrapper>
+        <TextContentWrapper data-aos="fade-right">
           <span>About us</span>
           <h1>Who We Are</h1>
           <p>
@@ -38,12 +38,12 @@ export function AboutSection() {
             problems while bringing smiles and relief to car owners.
           </p>
         </TextContentWrapper>
-        <ImageWrapper>
+        <ImageWrapper data-aos="fade-left">
           <Image src={AboutSectionImage} alt="About Section Image" />
         </ImageWrapper>
       </AboutSectionWrapper>
 
-      <CarBrandsContainer>
+      <CarBrandsContainer data-aos="zoom-in">
         <h3>A wide pool of car brands and manufacturer</h3>
         <CarBrandsWrapper>
           <CarBrands>

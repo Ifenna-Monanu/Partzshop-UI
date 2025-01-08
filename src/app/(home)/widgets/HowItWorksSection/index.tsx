@@ -22,7 +22,7 @@ export function HowItWorksSection() {
   return (
     <HowItWorksSectionContainer>
       <HowItWorksSectionWrapper>
-        <TextContentWrapper>
+        <TextContentWrapper data-aos="fade-right">
           <TextContentHeading>
             <span>How it works</span>
             <h1>It is easy to shop on Partzshop</h1>
@@ -50,7 +50,7 @@ export function HowItWorksSection() {
             </StepItem>
           </StepLists>
         </TextContentWrapper>
-        <ImageWrapper>
+        <ImageWrapper data-aos="fade-left">
           <Image src={HowItWorksImage} alt="How it works image" />
         </ImageWrapper>
       </HowItWorksSectionWrapper>

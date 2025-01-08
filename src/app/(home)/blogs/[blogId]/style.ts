@@ -20,13 +20,18 @@ export const BlogPageHeading = styled.div`
   display: grid;
 `;
 
-export const BackButton = styled.div`
+export const BackButton = styled.button`
+  place-self: start;
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
-  paddding: 0.25rem 0.5rem;
+  padding: 0.25rem 0rem;
   font-size: 14px;
   color: #0043e6;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  width: auto;
 `;
 
 export const BlogPageContent = styled.div`

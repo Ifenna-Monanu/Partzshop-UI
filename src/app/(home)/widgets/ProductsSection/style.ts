@@ -48,7 +48,7 @@ export const ProductSectionContent = styled.div`
 
 export const ProductCardWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1rem;
   width: 100%;
 `;
@@ -58,6 +58,7 @@ export const ProductCard = styled.div`
   height: 20rem;
   border-radius: 1rem;
   overflow: hidden;
+  cursor: pointer;
   p {
     position: absolute;
     top: 50%;

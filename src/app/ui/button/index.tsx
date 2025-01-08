@@ -34,6 +34,7 @@ const ButtonUI = styled.button<{
   border: 1px solid #0043e6;
   border-radius: 50rem;
   cursor: pointer;
+  transition: 0.2s ease-in;
 
   &:disabled {
     opacity: 0.5;
@@ -47,6 +48,11 @@ const ButtonUI = styled.button<{
     color: #0043e6;
     background: #ffffff;
     border: 1px solid #0043e6;
+    &:hover {
+      color: #ffffff;
+      background: #0043e6;
+      border: 1px solid #0043e6;
+    }
   }
   &.link {
   }

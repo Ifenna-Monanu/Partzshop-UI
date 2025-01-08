@@ -22,7 +22,7 @@ export function BlogSection() {
   }
   return (
     <BlogSectionContainer>
-      <BlogSectionWrapper>
+      <BlogSectionWrapper data-aos="fade-down">
         <BlogSectionHeading>
           <h1>Our Blog</h1>
           <a href="/blogs">

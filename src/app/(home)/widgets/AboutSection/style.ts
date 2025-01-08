@@ -96,7 +96,7 @@ export const CarBrandsWrapper = styled.div`
 `;
 
 export const CarBrands = styled.div`
-  display: flex;
+  display: none;
   visibility: collapse;
   align-items: center;
   justify-content: space-between;
@@ -104,8 +104,10 @@ export const CarBrands = styled.div`
   &:first-child {
     visibility: visible;
     margin: auto;
+    display: flex;
   }
-  @media (max-width: 540px) {
+  @media (max-width: 740px) {
+    display: flex;
     visibility: visible;
     animation: ${linearLoop} 20s linear infinite;
   }

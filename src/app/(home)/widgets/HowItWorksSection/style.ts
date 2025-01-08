@@ -79,9 +79,13 @@ export const StepItem = styled.div`
 export const ImageWrapper = styled.div`
   height: 30rem;
   overflow: hidden;
+  place-self: end;
   img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+  }
+  @media (max-width: 540px) {
+    place-self: auto;
   }
 `;
