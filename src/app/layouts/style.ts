@@ -10,15 +10,15 @@ export const NavContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 90;
   .menu {
     display: none;
     padding: 0.5rem;
     cursor: pointer;
   }
   @media (max-width: 740px) {
-    position: sticky;
-    top: 0;
-    z-index: 90;
     .menu {
       display: block;
     }
@@ -94,7 +94,7 @@ export const FooterWrapper = styled.div`
 
 export const LinksContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   width: 100%;
 

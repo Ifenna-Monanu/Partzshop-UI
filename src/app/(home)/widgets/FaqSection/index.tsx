@@ -39,7 +39,7 @@ export function FaqSection() {
 
   return (
     <FaqSectionContainer>
-      <FaqSectionWrapper>
+      <FaqSectionWrapper data-aos="zoom-in">
         <FaqSectionHeading>
           <span>FAQ</span>
           <h1>

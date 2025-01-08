@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Image from "next/image";
 import {
   ProductSectionHeading,
@@ -19,10 +20,13 @@ import {
   SuspensionPartsImage,
 } from "@/app/assets/images/products/";
 import WhatsappConfig from "@/util/whatsapp.config";
+import WhatsappModal from "@/app/ui/whatsapp-modal";
+import Button from "@/app/ui/button";
 
 export function ProductsSection() {
+  const [whatsappModal, setWhatsappModal] = useState(false);
   return (
-    <ProductSectionContainer>
+    <ProductSectionContainer data-aos="fade-right">
       <ProductSectionWrapper>
         <ProductSectionHeading>
           <span>Our Products</span>
@@ -69,9 +73,21 @@ export function ProductsSection() {
             </ProductCard>
           </ProductCardWrapper>
 
-          <StoreButton href={WhatsappConfig.link}>Visit Store</StoreButton>
+          <Button
+            style={{ padding: ".75rem 3rem" }}
+            btnType="secondary"
+            onClick={() => setWhatsappModal(true)}
+          >
+            Visit Store
+          </Button>
         </ProductSectionContent>
       </ProductSectionWrapper>
+
+      {/* Whatsapp Modal */}
+      <WhatsappModal
+        openState={whatsappModal}
+        closeAction={() => setWhatsappModal(false)}
+      />
     </ProductSectionContainer>
   );
 }

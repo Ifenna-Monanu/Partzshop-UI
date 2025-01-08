@@ -9,7 +9,7 @@ export const navLinks = [
   {
     id: "2",
     name: "Our Products",
-    link: WhatsappConfig.link,
+    link: "/#products",
   },
   {
     id: "3",

@@ -1,6 +1,7 @@
 "use client";
 import "./globals.css";
 import Provider from "@/theme/provider";
+import StyledComponentsRegistry from "./registry";
 
 // export const metadata: Metadata = {
 //   title: "Create Next App",
@@ -15,7 +16,9 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <Provider>{children}</Provider>
+        <StyledComponentsRegistry>
+          <Provider>{children}</Provider>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );

@@ -23,10 +23,9 @@ import "swiper/css/autoplay";
 import SlideImage01 from "@/app/assets/images/vanguard-image-1.png";
 import SlideImage02 from "@/app/assets/images/vanguard-image-2.png";
 import SlideImage03 from "@/app/assets/images/vanguard-image-3.png";
-import { SlideLeftIcon, SlideRightIcon, WhatsappIcon } from "@/app/assets/svg";
-import Modal from "@/app/ui/modal";
+import { SlideLeftIcon, SlideRightIcon } from "@/app/assets/svg";
 import Button from "@/app/ui/button";
-import WhatsappConfig from "@/util/whatsapp.config";
+import WhatsappModal from "@/app/ui/whatsapp-modal";
 
 export function HeroSection() {
   const heroSwipper = useRef<SwiperRef>(null);
@@ -37,7 +36,7 @@ export function HeroSection() {
       <HeroSectionContainer>
         <HeroSectionWrapper>
           <VanguardWrapper>
-            <HeroSectionText>
+            <HeroSectionText data-aos="fade-down">
               <h1>
                 Get The Most <span>Authentic Parts</span> For Your Car
               </h1>
@@ -112,34 +111,7 @@ export function HeroSection() {
       </HeroSectionContainer>
 
       {/* Whatsapp Modal */}
-      <Modal
-        maxWidth={400}
-        show={whatsappModal}
-        onClose={() => setWhatsappModal(false)}
-      >
-        <Modal.Body>
-          <Image src={WhatsappIcon} alt="Whatsapp Icon" width={54} />
-          <h2>
-            Our sales reps are available 24/7 on WhatsApp to take your order and
-            all your car needs.
-          </h2>
-          <p>Feel free to ask for tips and tricks to keep your car running!</p>
-          <Button
-            btnType="primary"
-            variant="full"
-            onClick={() => window.open(WhatsappConfig.link, "_blank")}
-          >
-            Proceed to Shop
-          </Button>
-          <Button
-            btnType="secondary"
-            variant="full"
-            onClick={() => setWhatsappModal(false)}
-          >
-            Go Back
-          </Button>
-        </Modal.Body>
-      </Modal>
+      <WhatsappModal openState={whatsappModal} closeAction={()=>setWhatsappModal(false)} />
     </>
   );
 }

@@ -16,7 +16,7 @@ import {
 
 export function ServiceSection() {
   return (
-    <ServiceSectionContainer>
+    <ServiceSectionContainer data-aos="fade-up">
       <ServiceSectionWrapper>
         <ServiceSectionHeading>
           <span>Our Services</span>

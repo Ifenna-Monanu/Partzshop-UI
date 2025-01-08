@@ -19,7 +19,7 @@ import {
 
 export function WhyChooseSection() {
   return (
-    <WhyChooseSectionContainer>
+    <WhyChooseSectionContainer data-aos="fade-down-right">
       <WhyChooseSectionWrapper>
         <WhyChooseSectionHeading>
           <h1>Why choose Partzshop?</h1>

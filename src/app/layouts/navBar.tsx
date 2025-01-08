@@ -8,6 +8,7 @@ import { NavContainer, NavContainerLinks, NavLink } from "./style";
 import { MenuIcon, CloseIcon, WhatsappIcon } from "../assets/svg";
 import Modal from "../ui/modal";
 import WhatsappConfig from "@/util/whatsapp.config";
+import WhatsappModal from "../ui/whatsapp-modal";
 
 export const NavBar = () => {
   const [navState, setNavState] = useState(false);
@@ -38,34 +39,10 @@ export const NavBar = () => {
         </div>
       </NavContainer>
 
-      <Modal
-        maxWidth={400}
-        show={whatsappModal}
-        onClose={() => setWhatsappModal(false)}
-      >
-        <Modal.Body>
-          <Image src={WhatsappIcon} alt="Whatsapp Icon" width={54} />
-          <h2>
-            Our sales reps are available 24/7 on WhatsApp to take your order and
-            all your car needs.
-          </h2>
-          <p>Feel free to ask for tips and tricks to keep your car running!</p>
-          <Button
-            btnType="primary"
-            variant="full"
-            onClick={() => window.open(WhatsappConfig.link, "_blank")}
-          >
-            Proceed to Shop
-          </Button>
-          <Button
-            btnType="secondary"
-            variant="full"
-            onClick={() => setWhatsappModal(false)}
-          >
-            Go Back
-          </Button>
-        </Modal.Body>
-      </Modal>
+      <WhatsappModal
+        openState={whatsappModal}
+        closeAction={() => setWhatsappModal(false)}
+      />
     </>
   );
 };

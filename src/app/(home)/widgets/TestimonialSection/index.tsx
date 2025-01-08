@@ -31,7 +31,7 @@ export function TestimonialSection() {
 
   return (
     <TestimonialSectionContainer>
-      <TestimonialSectionWrapper>
+      <TestimonialSectionWrapper data-aos="zoom-out-up">
         <TestimonialSectionHeading>
           <span>Tesimonials</span>
           <h1>What our customers have to say</h1>
